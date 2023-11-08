@@ -1,3 +1,31 @@
-div {
+/* div {
     color:blue;
-}
+} */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    /* background-color: rgba(0, 102, 204, 0.4); */
+  }
+  
+  .signature {
+    font-family: 'Dancing Script', cursive;
+    color: #333;
+    font-size: 120px;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    text-align: center; 
+  }
+  
+  .description {
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    color: #333;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    text-align: center; 
+  }
+  
+  
