@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
@@ -8,17 +10,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emanoil Oriana Portofolio</title>
     <link rel="stylesheet" href="index.css">
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    
+    <!-- <meta charset="utf-8" /> -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" /> -->
     <link rel="stylesheet" href="assets/css/main.css" />
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" />
+        
     </noscript>
 </head>
 <body>
-    <div class="signature"></div>
+
+    <div class="signature">Emanoil Oriana Elena</div>
     <div class="description">The Digital Alchemist</div>
-    <a href="#banner" class="button style2 scrolly-middle">Let's get started</a>
+    <br>
+    <div id="heartContainer" onclick="createHeart()">❤️</div>
+    <br>
+    <br>
+    <hr>
+    <div class="container">
+        <div class="card">
+        </div>
+        <div class="button-container">
+        <button class="button is-primary">
+          <span class="icon"><i class="fas fa-heart"></i></span><span>Let's Get Started</span>
+        </button>
+        <span class="icon is-popup-icon">
+          <i class="fas fa-heart"></i>
+        </span>
+        </div>
+      </div>
      <article class="container box style2"> 
         <header>
             <h2>Skills</h2>
@@ -89,7 +110,7 @@
     
     <script  type="module" src="https://unpkg.com/autotyper@x.x.x/dist/index.min.js"></script>
    
-    <script>
+    <!-- <script>
         document.addEventListener("DOMContentLoaded",()=>{
         const example = Object.create(autotyper);
     const element = document.querySelector('.signature');
@@ -100,6 +121,45 @@
     example.init(element, options);
     console.log("orice");
     })
-    </script>
+  
+    </script> -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => { 
+            function createHeart() {
+      const heart = document.createElement("div");
+      heart.className = "heart";
+      heart.textContent = "Let's Get Started";
+      document.getElementById("heartContainer").appendChild(heart);
+
+      // Remove the heart element after the animation ends
+      heart.addEventListener("animationend", () => {
+        heart.remove();
+      });
+    }
+  
+    function heartAnimation() {
+  var el = $(this).next();
+  var newone = el.clone(true);
+
+  el.before(newone);
+  newone.addClass("enlarge");
+  el.remove();
+}
+function cardAnimation() {
+  var el = $(".card");
+  var newone = el.clone(true);
+
+  el.before(newone);
+  newone.addClass("slide");
+  el.remove();
+}
+$(".button").click(function() {
+  heartAnimation.call(this);
+  cardAnimation();
+})
+        });
+        </script>
+
+
 </body>
 </html>
