@@ -22,24 +22,14 @@
 <body>
 
     <div class="signature">Emanoil Oriana Elena</div>
+    <br>
     <div class="description">The Digital Alchemist</div>
     <br>
     <div id="heartContainer" onclick="createHeart()">❤️</div>
     <br>
     <br>
     <hr>
-    <div class="container">
-        <div class="card">
-        </div>
-        <div class="button-container">
-        <button class="button is-primary">
-          <span class="icon"><i class="fas fa-heart"></i></span><span>Let's Get Started</span>
-        </button>
-        <span class="icon is-popup-icon">
-          <i class="fas fa-heart"></i>
-        </span>
-        </div>
-      </div>
+    
      <article class="container box style2"> 
         <header>
             <h2>Skills</h2>
@@ -124,42 +114,23 @@
   
     </script> -->
     <script>
-        document.addEventListener('DOMContentLoaded', () => { 
-            function createHeart() {
-      const heart = document.createElement("div");
-      heart.className = "heart";
-      heart.textContent = "Let's Get Started";
-      document.getElementById("heartContainer").appendChild(heart);
-
-      // Remove the heart element after the animation ends
-      heart.addEventListener("animationend", () => {
-        heart.remove();
-      });
-    }
-  
-    function heartAnimation() {
-  var el = $(this).next();
-  var newone = el.clone(true);
-
-  el.before(newone);
-  newone.addClass("enlarge");
-  el.remove();
-}
-function cardAnimation() {
-  var el = $(".card");
-  var newone = el.clone(true);
-
-  el.before(newone);
-  newone.addClass("slide");
-  el.remove();
-}
-$(".button").click(function() {
-  heartAnimation.call(this);
-  cardAnimation();
-})
+        document.addEventListener('DOMContentLoaded', () => {
+          function createHeart() {
+            const heart = document.createElement("div");
+            heart.className = "heart";
+            heart.textContent = "Let's Get Started";
+            document.getElementById("heartContainer").appendChild(heart);
+      
+            // Remove the heart element after the animation ends
+            heart.addEventListener("animationend", () => {
+              heart.remove();
+            });
+          }
+      
+          document.getElementById("heartContainer").addEventListener("click", createHeart);
         });
-        </script>
-
+      </script>
+      
 
 </body>
 </html>
