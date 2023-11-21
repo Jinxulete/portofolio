@@ -16,7 +16,7 @@
     </noscript>
 </head>
 <body>
-    <div class="signature">Emanoil Oriana Elena</div>
+    <div class="signature"></div>
     <div class="description">The Digital Alchemist</div>
     <a href="#banner" class="button style2 scrolly-middle">Let's get started</a>
      <article class="container box style2"> 
@@ -85,5 +85,21 @@
             </li>
         </ul>
     </section>
+    <!-- <script src="https://unpkg.com/autotyper@x.x.x/dist/index.min.js"></script> -->
+    
+    <script  type="module" src="https://unpkg.com/autotyper@x.x.x/dist/index.min.js"></script>
+   
+    <script>
+        document.addEventListener("DOMContentLoaded",()=>{
+        const example = Object.create(autotyper);
+    const element = document.querySelector('.signature');
+    const options = {
+      text: 'Emanoil Oriana Elena.',
+    };
+     
+    example.init(element, options);
+    console.log("orice");
+    })
+    </script>
 </body>
 </html>
