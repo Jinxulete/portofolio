@@ -36,15 +36,65 @@ body {
   width: 100%;
   top: 0;
   left: 0;
-  transition: all 1s ease-in;
+  transition: all 2s ease-in;
+}
+
+.signatureWrapper .description {
+  text-align: center;
+  font-size: 80px;
+  width: 100%;
+}
+
+.signatureWrapper .descriptionClone {
+  text-align: center;
+  font-size: 80px;
+  position: absolute;
+  color: white;
+  background-color: white;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: all 2s ease-in;
 }
 
 body.loaded .signatureWrapper .signatureClone {
   left: 100%;
 }
 
+body.loaded .signatureWrapper .descriptionClone {
+  left: 100%;
+}
+
 .description {
-  font-size: 50px;
+  font-size: 80px;
+}
+
+.blushpink{
+  /* Ellipse 3 */
+
+position: absolute;
+width: 448px;
+height: 448px;
+left: 1532px;
+top: -148px;
+
+background: #F8A9AD;
+filter: blur(250px);
+
+}
+
+.blushblue {
+  /* Ellipse 3 */
+
+position: absolute;
+width: 448px;
+height: 448px;
+left: -126px;
+top: -152px;
+
+background: #F8A9AD;
+filter: blur(250px);
+
 }
 
 .heart {
@@ -58,8 +108,8 @@ body.loaded .signatureWrapper .signatureClone {
 
 .heart .title {
   position: absolute;
-  top: 124px;
-  left: 98px;
+  top: 90px;
+  left: 88px;
   color: white;
   font-size: 25px;
   font-weight: bold;
@@ -240,4 +290,8 @@ body.loaded .signatureWrapper .signatureClone {
     top: 226px;
     left: 20px;
   }
+}
+
+.h2 {
+  font-size: 500px;
 }
