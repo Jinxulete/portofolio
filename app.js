@@ -1,15 +1,7 @@
-
-
-const autotyper = require('autotyper').default;
-
-    
-    document.addEventListener("DOMContentLoaded",()=>{
-        const example = Object.create(autotyper);
-    const element = document.querySelector('.signature');
-    const options = {
-      text: 'Emanoil Oriana Elena.',
-    };
-     
-    example.init(element, options);
-    console.log("orice");
-    })
+document.querySelector(".heart").addEventListener("click", () => {
+  document.querySelector(".heart").classList.add("animate");
+  setTimeout(() => {
+    document.querySelector(".skills").scrollIntoView();
+    document.querySelector(".heart").classList.remove("animate");
+  }, 1000);
+});
