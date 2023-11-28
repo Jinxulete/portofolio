@@ -7,6 +7,11 @@ import html from '/images/html5.svg';
 import npm from '/images/npm.svg';
 import javascript from '/images/javascript.svg';
 import react from '/images/react.svg';
+import spn from '/images/spn.png'
+import blogstartech from '/images/blogstartech.png';
+import facecards from '/images/facecards.jpg';
+import enjoee from '/images/enjoee.jpeg';
+import ea from '/images/ea.png';
 
  function WorkXP() {
 
@@ -73,10 +78,10 @@ import react from '/images/react.svg';
         <div className='mywork-ctim-div'>
           <div className='mywork-box-project'>
             <a href='#'>
-              <img className='mywork-project-img' src={nature} alt='spn.png'/>
+              <img className='mywork-project-img' src={blogstartech} alt='blogstartech.png'/>
             </a>
             <div className='mywork-exp-sect'>
-            <span>A platform build for online courses teaching employes to dive Safe on the internet</span>
+            <span>A News blog filled with information and experience of Startechteam</span>
             <div className='mywork-exp-sect-tehn'>
             <img src={html} alt='html5.svg'/>
             <img src={css} alt='css3-original.svg'/>
@@ -93,10 +98,10 @@ import react from '/images/react.svg';
 
           <div className='mywork-box-project'>
             <a href='#'>
-              <img className='mywork-project-img' src={nature} alt=''/>
+              <img className='mywork-project-img' src={spn} alt=''/>
             </a>
             <div className='mywork-exp-sect'>
-            <span>Aici bag blogul de la class iar poza mi-o va da Ionut daca e Dragut </span>
+            <span>A platform build for online courses teaching employes to dive Safe on the internet</span>
             <div className='mywork-exp-sect-tehn'>
             <img src={laravel} alt='Laravel'/>
             <img src={laravel} alt='Laravel'/>
@@ -110,7 +115,7 @@ import react from '/images/react.svg';
 
           <div className='mywork-box-project'>
             <a href='#'>
-              <img className='mywork-project-img' src={nature} alt=''/>
+              <img className='mywork-project-img' src={enjoee} alt='enjoee.jpeg'/>
             </a>
             <div className='mywork-exp-sect'>
             <span>Enjoee- Android & Apple App build to Create Events and invite the people you want or need to</span>
@@ -128,7 +133,7 @@ import react from '/images/react.svg';
 
           <div className='mywork-box-project'>
             <a href='#'>
-              <img className='mywork-project-img' src={nature} alt=''/>
+              <img className='mywork-project-img' src={facecards} alt='facecards.jpg'/>
             </a>
             <div className='mywork-exp-sect'>
             <span>PAYSCOUT- A payment platform build for transactions</span>
@@ -145,7 +150,7 @@ import react from '/images/react.svg';
 
           <div className='mywork-box-project'>
             <a href='#'>
-              <img className='mywork-project-img' src={nature} alt=''/>
+              <img className='mywork-project-img' src={ea} alt='ea.png'/>
             </a>
             <div className='mywork-exp-sect'>
             <span>E.A. GAMES - Creation games on diffrent platforms like XP0, PS3, PS4 & PC</span>

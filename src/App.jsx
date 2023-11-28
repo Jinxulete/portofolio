@@ -24,7 +24,10 @@ import React,{ useEffect, useState } from 'react'
       <Skills/>
       <Getintouch/>
       
-      <a href='#first-container' className='scrolltotop-btn'>Scroll up</a>
+      <a href='#first-container' className='scrolltotop-btn'>
+        <i className="fa-solid fa-chevron-up"></i>
+        <span>Go top</span>
+        </a>
 
     </div>
   )
