@@ -8,15 +8,6 @@ import triangle from '/images/triangle-v.png';
   const [displayh2, setDisplayh2] = useState(false);
 
     useEffect(() => {
-     
-        // document.querySelector(".heart").addEventListener("click", () => {
-        //   document.querySelector(".heart").classList.add("animate");
-        //   setTimeout(() => {
-        //     document.querySelector(".about-container").scrollIntoView();
-        //     document.querySelector(".heart").classList.remove("animate");
-        //   }, 1000);
-        // });
-
         let cards = document.querySelectorAll(".card");
         let perspectiveElement = document.getElementById("perspective");
 

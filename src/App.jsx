@@ -14,6 +14,9 @@ import React,{ useEffect, useState } from 'react'
     
   },[]);
   
+  function goTop() {
+    document.getElementById('header-container').scrollIntoView();
+  }
 
   return (
     <div className="container-fluid">
@@ -24,7 +27,7 @@ import React,{ useEffect, useState } from 'react'
       <Skills/>
       <Getintouch/>
       
-      <a href='#first-container' className='scrolltotop-btn'>
+      <a href='#' onClick={goTop} className='scrolltotop-btn'>
         <i className="fa-solid fa-chevron-up"></i>
         <span>Go top</span>
         </a>

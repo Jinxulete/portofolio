@@ -9,8 +9,8 @@ import javascript from '/images/javascript.svg';
 import react from '/images/react.svg';
 import spn from '/images/spn.png'
 import blogstartech from '/images/blogstartech.png';
-import facecards from '/images/facecards.jpg';
-import enjoee from '/images/enjoee.jpeg';
+import facecards from '/images/facecards.jpeg';
+import enjoee from '/images/enj.png';
 import ea from '/images/ea.png';
 
  function WorkXP() {
@@ -78,7 +78,7 @@ import ea from '/images/ea.png';
         <div className='mywork-ctim-div'>
           <div className='mywork-box-project'>
             <a href='#'>
-              <img className='mywork-project-img' src={blogstartech} alt='blogstartech.png'/>
+              <img className='mywork-project-img' src={spn} alt='blogstartech.png'/>
             </a>
             <div className='mywork-exp-sect'>
             <span>A News blog filled with information and experience of Startechteam</span>
@@ -89,16 +89,15 @@ import ea from '/images/ea.png';
             <img src={react} alt='react.svg'/>
             <img src={laravel} alt='Laravel'/>
             <img src={npm} alt='npm.svg'/>
-
+            
             </div>
-
             <p>Front-end</p>
             </div>
           </div>
 
           <div className='mywork-box-project'>
             <a href='#'>
-              <img className='mywork-project-img' src={spn} alt=''/>
+              <img className='mywork-project-img' src={blogstartech} alt=''/>
             </a>
             <div className='mywork-exp-sect'>
             <span>A platform build for online courses teaching employes to dive Safe on the internet</span>
