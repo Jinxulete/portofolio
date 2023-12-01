@@ -12,6 +12,8 @@ import blogstartech from '/images/blogstartech.png';
 import facecards from '/images/facecards.jpeg';
 import enjoee from '/images/enj.png';
 import ea from '/images/ea.png';
+import postman from '/images/postman.svg';
+import selenium from '/images/selenium.svg';
 
  function WorkXP() {
 
@@ -77,18 +79,18 @@ import ea from '/images/ea.png';
 
         <div className='mywork-ctim-div'>
           <div className='mywork-box-project'>
-            <a href='#'>
-              <img className='mywork-project-img' src={spn} alt='blogstartech.png'/>
+            <a href='https://www.sigurantapenet.ro/'>
+              <img className='mywork-project-img' src={spn} alt='SigurantaPeNet'/>
             </a>
             <div className='mywork-exp-sect'>
-            <span>A News blog filled with information and experience of Startechteam</span>
+            <span>A platform build for online courses teaching employes to dive Safe on the internet</span>
             <div className='mywork-exp-sect-tehn'>
-            <img src={html} alt='html5.svg'/>
-            <img src={css} alt='css3-original.svg'/>
-            <img src={javascript} alt='javascript.svg'/>
-            <img src={react} alt='react.svg'/>
+            <img src={html} alt='html5'/>
+            <img src={css} alt='css3-original'/>
+            <img src={javascript} alt='javascript'/>
+            <img src={react} alt='react'/>
             <img src={laravel} alt='Laravel'/>
-            <img src={npm} alt='npm.svg'/>
+            <img src={npm} alt='npm'/>
             
             </div>
             <p>Front-end</p>
@@ -96,16 +98,16 @@ import ea from '/images/ea.png';
           </div>
 
           <div className='mywork-box-project'>
-            <a href='#'>
-              <img className='mywork-project-img' src={blogstartech} alt=''/>
+            <a href='https://blog.startechteam.ro/'>
+              <img className='mywork-project-img' src={blogstartech} alt='StarTechTeam'/>
             </a>
             <div className='mywork-exp-sect'>
-            <span>A platform build for online courses teaching employes to dive Safe on the internet</span>
+            <span>A News blog filled with information and experience of Startechteam</span>
             <div className='mywork-exp-sect-tehn'>
+            <img src={html} alt='html'/>
+            <img src={css} alt='css'/>
             <img src={laravel} alt='Laravel'/>
-            <img src={laravel} alt='Laravel'/>
-            <img src={laravel} alt='Laravel'/>
-            <img src={laravel} alt='Laravel'/>
+            <img src={npm} alt='npm'/>
             </div>
 
             <p>Front-end</p>
@@ -113,16 +115,15 @@ import ea from '/images/ea.png';
           </div>
 
           <div className='mywork-box-project'>
-            <a href='#'>
+            <a href='https://play.google.com/store/apps/details?id=com.eventmanager.android.joee'>
               <img className='mywork-project-img' src={enjoee} alt='enjoee.jpeg'/>
             </a>
             <div className='mywork-exp-sect'>
-            <span>Enjoee- Android & Apple App build to Create Events and invite the people you want or need to</span>
+            <span>Enjoee- Android & Apple App build to Create Events and invite people</span>
             <div className='mywork-exp-sect-tehn'>
-            <img src={laravel} alt='Laravel'/>
-            <img src={laravel} alt='Laravel'/>
-            <img src={laravel} alt='Laravel'/>
-            <img src={laravel} alt='Laravel'/>
+            <img src={postman} alt='Postman'/>
+            <img src={selenium} alt='Selenium'/>
+            
             </div>
 
             <p>QA Testing</p>
@@ -131,16 +132,14 @@ import ea from '/images/ea.png';
 
 
           <div className='mywork-box-project'>
-            <a href='#'>
+            <a href='https://www.payscout.com/'>
               <img className='mywork-project-img' src={facecards} alt='facecards.jpg'/>
             </a>
             <div className='mywork-exp-sect'>
             <span>PAYSCOUT- A payment platform build for transactions</span>
             <div className='mywork-exp-sect-tehn'>
-            <img src={laravel} alt='Laravel'/>
-            <img src={laravel} alt='Laravel'/>
-            <img src={laravel} alt='Laravel'/>
-            <img src={laravel} alt='Laravel'/>
+            <img src={postman} alt='Postman'/>
+            <img src={selenium} alt='Selenium'/>
             </div>
 
             <p>QA Testing</p>
@@ -148,16 +147,14 @@ import ea from '/images/ea.png';
           </div>
 
           <div className='mywork-box-project'>
-            <a href='#'>
+            <a href='https://www.ea.com/'>
               <img className='mywork-project-img' src={ea} alt='ea.png'/>
             </a>
             <div className='mywork-exp-sect'>
             <span>E.A. GAMES - Creation games on diffrent platforms like XP0, PS3, PS4 & PC</span>
             <div className='mywork-exp-sect-tehn'>
-            <img src={laravel} alt='Laravel'/>
-            <img src={laravel} alt='Laravel'/>
-            <img src={laravel} alt='Laravel'/>
-            <img src={laravel} alt='Laravel'/>
+            <img src={postman} alt='Postman'/>
+            <img src={selenium} alt='Selenium'/>
             </div>
 
             <p>QA Testing</p>

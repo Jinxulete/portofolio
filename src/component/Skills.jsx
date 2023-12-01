@@ -11,6 +11,8 @@ import scss from '/images/scss.svg';
 import git from '/images/git.svg';
 import javascript from '/images/javascript.svg';
 import react from '/images/react.svg';
+import rdm from '/images/rdm.png';
+import nagios from '/images/nagios.svg';
 
 
 
@@ -57,6 +59,14 @@ import react from '/images/react.svg';
           <div className='skrow-item-box'>
             <img src={postman} alt=''/>
             <p>Postman</p>
+          </div>
+          <div className='skrow-item-box'>
+            <img src={rdm} alt='RDM'/>
+            <p>RDM</p>
+          </div>
+          <div className='skrow-item-box'>
+            <img src={nagios} alt='Nagios'/>
+            <p>Nagios</p>
           </div>
          </div>
 
