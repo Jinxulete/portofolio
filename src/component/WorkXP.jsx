@@ -1,5 +1,4 @@
 import React,{ useState } from 'react'
-import nature from '/images/nature.jpg';
 import laravel from '/images/laravel_icon.png';
 import github from '/images/github.svg';
 import css from '/images/css3-original.svg';
