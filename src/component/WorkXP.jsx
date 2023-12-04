@@ -78,7 +78,7 @@ import selenium from '/images/selenium.svg';
 
         <div className='mywork-ctim-div'>
           <div className='mywork-box-project'>
-            <a href='https://www.sigurantapenet.ro/'>
+            <a href='https://www.sigurantapenet.ro/' target='_blank'>
               <img className='mywork-project-img' src={spn} alt='SigurantaPeNet'/>
             </a>
             <div className='mywork-exp-sect'>
@@ -97,7 +97,7 @@ import selenium from '/images/selenium.svg';
           </div>
 
           <div className='mywork-box-project'>
-            <a href='https://blog.startechteam.ro/'>
+            <a href='https://blog.startechteam.ro/' target='_blank'>
               <img className='mywork-project-img' src={blogstartech} alt='StarTechTeam'/>
             </a>
             <div className='mywork-exp-sect'>
@@ -114,7 +114,7 @@ import selenium from '/images/selenium.svg';
           </div>
 
           <div className='mywork-box-project'>
-            <a href='https://play.google.com/store/apps/details?id=com.eventmanager.android.joee'>
+            <a href='https://play.google.com/store/apps/details?id=com.eventmanager.android.joee' target='_blank'>
               <img className='mywork-project-img' src={enjoee} alt='enjoee.jpeg'/>
             </a>
             <div className='mywork-exp-sect'>
@@ -131,7 +131,7 @@ import selenium from '/images/selenium.svg';
 
 
           <div className='mywork-box-project'>
-            <a href='https://www.payscout.com/'>
+            <a href='https://www.payscout.com/' target='_blank'> 
               <img className='mywork-project-img' src={facecards} alt='facecards.jpg'/>
             </a>
             <div className='mywork-exp-sect'>
@@ -146,7 +146,7 @@ import selenium from '/images/selenium.svg';
           </div>
 
           <div className='mywork-box-project'>
-            <a href='https://www.ea.com/'>
+            <a href='https://www.ea.com/' target='_blank'>
               <img className='mywork-project-img' src={ea} alt='ea.png'/>
             </a>
             <div className='mywork-exp-sect'>
