@@ -57,8 +57,8 @@ import logo from '/images/logo.png';
                 <ul>
                     <li><button className='btn  mobnav-btn home_btn nav_btn' type='button' data-type='home'>Home</button></li>
                     <li><button className='btn  mobnav-btn about_btn nav_btn' type='button' data-type='about'>About me</button></li>
-                    <li><button className='btn  mobnav-btn skills_btn nav_btn' type='button' data-type='skills'>Skills</button></li>
                     <li><button className='btn  mobnav-btn ctim_btn nav_btn' type='button' data-type='cool-things'>Cool things I've made</button></li>
+                    <li><button className='btn  mobnav-btn skills_btn nav_btn' type='button' data-type='skills'>Skills</button></li>
                     <li><button className='btn  mobnav-btn contact_btn nav_btn' type='button' data-type='contact'>Contact</button></li>
 
                 </ul>
@@ -74,8 +74,8 @@ import logo from '/images/logo.png';
         <div className="header-nav">
           <button type='button' className='home_btn nav_btn' data-type='home'>Home</button>
           <button type='button' className='about_btn nav_btn' data-type='about'>About</button>
-          <button type='button' className='skills_btn nav_btn' data-type='skills'>Skills</button>
           <button type='button' className='ctim_btn nav_btn'  data-type='cool-things'>Cool things I've made</button>
+          <button type='button' className='skills_btn nav_btn' data-type='skills'>Skills</button>
           <button type='button' className='contact_btn nav_btn' data-type='contact'>Contact</button>
         </div>
         </div>
