@@ -22,7 +22,7 @@ import nagios from '/images/nagios.svg';
     <div id='skills-container' className='container container-cont skills-container'>
         <p className='ptitle-p'>Skills</p>
 
-         <p className='ptitle-p-subtitle'>I've been working with</p>
+         <p className='ptitle-p-subtitle'>I've been workinG with</p>
          <div className='skills-row-items'>
           <div className='skrow-item-box'>
             <img src={laravel} alt=''/>
