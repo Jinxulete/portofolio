@@ -9,8 +9,6 @@ import triangle from '/images/triangle-v.png';
 
     useEffect(() => {
         let cards = document.querySelectorAll(".card");
-        let perspectiveElement = document.getElementById("perspective");
-
         cards.forEach(function(card) {
             let img = card.querySelector("img");
             let paragraph = card.querySelector("p");
@@ -45,13 +43,24 @@ import triangle from '/images/triangle-v.png';
   return (
     <div id='first-container'>
       <div className='container container-cont first-container'>
-          <h3><span>Emanoil Oriana Elena</span></h3>
+          <h3 className='hero-name' aria-label='Emanoil Oriana Elena'>
+            <span className='hero-name-word'>Emanoil</span>
+            <span className='hero-name-word'>Oriana</span>
+            <span className='hero-name-word'>Elena</span>
+          </h3>
 
           <div className="first-cont-h2">
             {displayh2 && 
             (
               <FadeIn>
-                  <h2>The Digital Alchemist</h2>
+                <div className='hero-copy'>
+                  <h2>QA Automation &amp; Manual Engineer</h2>
+                  <p className='hero-subtitle'>I build and test reliable digital experiences.</p>
+                  <div className='hero-actions'>
+                    <a href='#projects-container' className='hero-action hero-action-primary'>View projects</a>
+                    <a href='/EmanoilOrianaCV.pdf' target='_blank' rel='noreferrer' className='hero-action hero-action-secondary'>Download resume</a>
+                  </div>
+                </div>
               </FadeIn>
             )
             }

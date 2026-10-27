@@ -1,4 +1,3 @@
-import React,{ useState } from 'react'
 import FadeIn from 'react-fade-in';
 import splash from '/images/splashgold.png';
 
@@ -6,13 +5,15 @@ import splash from '/images/splashgold.png';
 
   return (
     <div id='about-container'>
-      <div className='container container-cont about-container'>
-        <img src={splash} alt=""/>
+      <div className='container container-cont about-container reveal-on-scroll'>
+        <img className='about-splash' src={splash} alt="" aria-hidden='true'/>
         <FadeIn>
-        <p> I am a <span>Front-end developer</span> in <i className="fa-regular fa-heart"></i> with programming and <span>passionate</span> about creating an
-      amazing <span>user-experience</span>. I have a <span>strong knowledge</span> of the inner workings of the web
-      and the ability to <span>bring websites</span> to <span>life</span> from a mock-up to a fully <span>functional web app</span>.
-      </p>
+        <p>
+          I am a <span>QA Automation &amp; Manual Engineer</span> with 7 years of experience, in{' '}
+          <i className="fa-regular fa-heart"></i> with uncovering the unseen and turning imperfections into
+          perfection. With a strong eye for detail and a passion for quality, I bring digital experiences to life
+          through testing, crafting confidence in every release.
+        </p>
       </FadeIn>
       </div>
     </div>
