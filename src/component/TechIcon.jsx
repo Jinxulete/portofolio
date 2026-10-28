@@ -74,7 +74,7 @@ function TechIcon({ name }) {
         x="50"
         y="57"
         fill="#fff"
-        fontFamily="Arial, sans-serif"
+        fontFamily="Roboto, Arial, sans-serif"
         fontSize={icon.label.length > 2 ? 28 : 38}
         fontWeight="700"
         textAnchor="middle"

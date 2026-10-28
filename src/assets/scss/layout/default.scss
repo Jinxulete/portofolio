@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
 
+:root {
+	--font-display: "Dancing Script", cursive;
+	--font-body: "Roboto", Arial, sans-serif;
+}
+
 html {
 	scroll-behavior: smooth;
 }
 
 body {
+	font-family: var(--font-body);
 	background: url('/images/handpaint.jpg');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
@@ -15,6 +21,13 @@ body {
   padding:0;
   margin:0;
 
+}
+
+button,
+input,
+select,
+textarea {
+	font-family: var(--font-body);
 }
 
 @supports (transform: translate3d(0, 0, 0)) {
@@ -97,7 +110,7 @@ body {
 	font-weight: bold;
 	margin-top: 50px;
 	margin-bottom: 40px;
-	font-family: "Dancing Script", cursive;
+	font-family: var(--font-display);
 	/* -webkit-text-stroke: 1px #000;
   color:transparent; */
 
@@ -757,6 +770,8 @@ body {
 	right: 15px;
 	bottom: 20px;
 	padding: 5px;
+	border: 0;
+	background: transparent;
 	cursor: pointer;
 	text-decoration: none;
 	font-weight: bold;
@@ -938,7 +953,7 @@ body {
 	padding: 7px 7px 20px;
 	position: relative;
 
-	font-family: "Dancing Script", cursive;
+	font-family: var(--font-display);
 	-webkit-animation: none;
 	        animation: none;
 
@@ -1016,7 +1031,7 @@ body {
 	text-align: center;
 	text-wrap: balance;
 	overflow: visible;
-	font-family: "Roboto", sans-serif;
+	font-family: inherit;
 	margin-bottom: 12px;
 }
 
@@ -1116,6 +1131,7 @@ body {
 		will-change: transform;
 
 		.card {
+			font-family: var(--font-body);
 			border: none;
 			background-color: transparent;
 			position: relative;
@@ -2669,7 +2685,7 @@ body {
 .gitstitle-bold {
 	font-size: 65px;
 	font-weight: bold;
-	font-family: "Dancing Script", cursive;
+	font-family: var(--font-display);
 
 }
 

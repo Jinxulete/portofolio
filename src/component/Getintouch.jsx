@@ -22,7 +22,7 @@ import linkedin_circle from '/images/linkedin-circle.svg';
           
               <div className='git-wrpsocial-icons'>
                   <a href='https://github.com/Jinxulete'> <img src={git} fill='red' alt='Git'/></a>
-                  <a href='https://www.linkedin.com/in/oriana-elena-emanoil-cosma-338487111/'> <img src={linkedin_circle} alt='Linkedin'/></a>
+                  <a href='https://www.linkedin.com/in/oriana-elena-emanoil-338487111/'> <img src={linkedin_circle} alt='Linkedin'/></a>
               </div>
             </div>
             <p className='git-stitle'>or download my resume</p>
