@@ -71,7 +71,11 @@ const qaChecks = ['Navigation', 'Content', 'Project cards', 'Responsive UI', 'Co
       const marker = Math.min(window.innerHeight * 0.35, 280)
       const scrollPosition = window.scrollY || window.pageYOffset || 0
       const scrollableDistance = Math.max(1, document.documentElement.scrollHeight - window.innerHeight)
-      const showGoTop = scrollPosition >= scrollableDistance * 0.45
+      const heroSection = document.getElementById('first-container')
+      const headerHeight = document.getElementById('header-container')?.offsetHeight || 76
+      const showGoTop = heroSection
+        ? heroSection.getBoundingClientRect().bottom <= headerHeight + 16
+        : scrollPosition >= window.innerHeight
       const scrollProgress = Math.min(1, scrollPosition / scrollableDistance)
       let activeType = 'home'
 
@@ -159,9 +163,21 @@ const qaChecks = ['Navigation', 'Content', 'Project cards', 'Responsive UI', 'Co
     qaTimers.current.push(window.setTimeout(() => setQaTestState('idle'), 7600))
   }
   
-  function goTop(event) {
-    event.preventDefault()
-    document.getElementById('header-container').scrollIntoView();
+  function goTop() {
+    const scrollRoot = document.scrollingElement || document.documentElement
+    const supportsSmoothScroll = 'scrollBehavior' in document.documentElement.style
+
+    if (scrollRoot && typeof scrollRoot.scrollTo === 'function') {
+      scrollRoot.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: supportsSmoothScroll ? 'smooth' : 'auto',
+      })
+      return
+    }
+
+    document.documentElement.scrollTop = 0
+    document.body.scrollTop = 0
   }
 
   return (
@@ -216,10 +232,10 @@ const qaChecks = ['Navigation', 'Content', 'Project cards', 'Responsive UI', 'Co
         </div>
       )}
       
-      <a href='#' onClick={goTop} className='scrolltotop-btn' aria-hidden='true' tabIndex={-1}>
+      <button type='button' onClick={goTop} className='scrolltotop-btn' aria-hidden='true' tabIndex={-1}>
         <i className="fa-solid fa-chevron-up"></i>
         <span>Go top</span>
-        </a>
+      </button>
 
     </div>
   )

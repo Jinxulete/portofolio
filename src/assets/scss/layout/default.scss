@@ -1,10 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
 
+:root {
+	--font-display: "Dancing Script", cursive;
+	--font-body: "Roboto", Arial, sans-serif;
+}
+
 html {
 	scroll-behavior: smooth;
 }
 
 body {
+	font-family: var(--font-body);
 	background: url('/images/handpaint.jpg');
 	background-size: 100% 100%;
 	background-repeat: no-repeat;
@@ -15,6 +21,29 @@ body {
   padding:0;
   margin:0;
 
+}
+
+.container-fluid,
+.container-fluid * {
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+
+.container-fluid .selectable-content,
+.container-fluid .selectable-content * {
+	-webkit-user-select: text;
+	   -moz-user-select: text;
+	    -ms-user-select: text;
+	        user-select: text;
+}
+
+button,
+input,
+select,
+textarea {
+	font-family: var(--font-body);
 }
 
 @supports (transform: translate3d(0, 0, 0)) {
@@ -97,7 +126,7 @@ body {
 	font-weight: bold;
 	margin-top: 50px;
 	margin-bottom: 40px;
-	font-family: "Dancing Script", cursive;
+	font-family: var(--font-display);
 	/* -webkit-text-stroke: 1px #000;
   color:transparent; */
 
@@ -757,6 +786,8 @@ body {
 	right: 15px;
 	bottom: 20px;
 	padding: 5px;
+	border: 0;
+	background: transparent;
 	cursor: pointer;
 	text-decoration: none;
 	font-weight: bold;
@@ -938,7 +969,7 @@ body {
 	padding: 7px 7px 20px;
 	position: relative;
 
-	font-family: "Dancing Script", cursive;
+	font-family: var(--font-display);
 	-webkit-animation: none;
 	        animation: none;
 
@@ -1016,7 +1047,7 @@ body {
 	text-align: center;
 	text-wrap: balance;
 	overflow: visible;
-	font-family: "Roboto", sans-serif;
+	font-family: inherit;
 	margin-bottom: 12px;
 }
 
@@ -1116,6 +1147,7 @@ body {
 		will-change: transform;
 
 		.card {
+			font-family: var(--font-body);
 			border: none;
 			background-color: transparent;
 			position: relative;
@@ -2518,6 +2550,15 @@ body {
 		-webkit-text-stroke: none;
 	}
 
+	.about-heart {
+		color: #d51635;
+		-webkit-text-fill-color: #d51635;
+		text-shadow: 0 1px 0 #8d0d22, 0 3px 7px rgba(141, 13, 34, 0.3);
+		-webkit-transform: translateY(2px);
+		    -ms-transform: translateY(2px);
+		        transform: translateY(2px);
+	}
+
 
 }
 
@@ -2669,7 +2710,7 @@ body {
 .gitstitle-bold {
 	font-size: 65px;
 	font-weight: bold;
-	font-family: "Dancing Script", cursive;
+	font-family: var(--font-display);
 
 }
 
@@ -3000,6 +3041,13 @@ body {
 }
 
 @media (max-width: 576px) {
+	.ptitle-p {
+		font-size: 36px;
+		line-height: 1.15;
+		margin-top: 34px;
+		margin-bottom: 20px;
+	}
+
 	#about-container p {
 		font-size: 25px;
 	}
@@ -3134,7 +3182,8 @@ body {
 	}
 
 	.ctim-title {
-		padding: 28px 0;
+		padding: 18px 0;
+		margin-bottom: 18px;
 
 		&::before {
 			left: -20px;

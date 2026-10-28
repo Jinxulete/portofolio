@@ -1,0 +1,539 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Oriana Emanoil - QA Automation and Manual Testing resume" />
+    <title>Oriana Emanoil | QA Resume</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --ink: #172033;
+        --muted: #5e687a;
+        --navy: #0c315d;
+        --blue: #506bd4;
+        --cyan: #16b7c6;
+        --gold: #d99120;
+        --line: #dbe3ed;
+        --paper: #ffffff;
+        --canvas: #edf2f7;
+      }
+
+      * { box-sizing: border-box; }
+
+      html { scroll-behavior: smooth; }
+
+      body {
+        margin: 0;
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 12% 15%, rgba(80, 107, 212, 0.12), transparent 26rem),
+          radial-gradient(circle at 90% 90%, rgba(22, 183, 198, 0.11), transparent 30rem),
+          var(--canvas);
+        font-family: "Roboto", Arial, sans-serif;
+        font-size: 14px;
+        line-height: 1.45;
+      }
+
+      a { color: inherit; }
+
+      .preview-actions {
+        width: min(1040px, calc(100% - 32px));
+        margin: 22px auto 12px;
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+      }
+
+      .preview-actions a,
+      .preview-actions button {
+        appearance: none;
+        border: 1px solid rgba(80, 107, 212, 0.3);
+        border-radius: 999px;
+        padding: 10px 17px;
+        background: rgba(255, 255, 255, 0.88);
+        color: #263a67;
+        font: 600 13px/1 "Roboto", Arial, sans-serif;
+        text-decoration: none;
+        cursor: pointer;
+        box-shadow: 0 7px 20px rgba(31, 48, 85, 0.08);
+      }
+
+      .preview-actions .primary {
+        color: #fff;
+        background: var(--blue);
+        border-color: var(--blue);
+      }
+
+      .resume {
+        width: min(1040px, calc(100% - 32px));
+        min-height: 297mm;
+        margin: 0 auto 40px;
+        overflow: hidden;
+        background: var(--paper);
+        border-top: 10px solid var(--navy);
+        border-bottom: 10px solid var(--cyan);
+        box-shadow: 0 24px 70px rgba(30, 48, 78, 0.17);
+      }
+
+      .resume-header {
+        position: relative;
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 205px;
+        gap: 40px;
+        padding: 38px 46px 31px;
+        color: #fff;
+        background:
+          linear-gradient(115deg, rgba(12, 49, 93, 0.98), rgba(22, 59, 107, 0.96) 60%, rgba(41, 92, 145, 0.94));
+      }
+
+      .resume-header::after {
+        content: "";
+        position: absolute;
+        right: -75px;
+        bottom: -115px;
+        width: 260px;
+        height: 260px;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 50%;
+        box-shadow: 0 0 0 30px rgba(255, 255, 255, 0.025), 0 0 0 60px rgba(255, 255, 255, 0.02);
+      }
+
+      .eyebrow {
+        margin: 0 0 8px;
+        color: #80e2e8;
+        font-size: 12px;
+        font-weight: 800;
+        letter-spacing: 0.17em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-size: clamp(34px, 5vw, 54px);
+        line-height: 1.02;
+        letter-spacing: 0.02em;
+        font-weight: 500;
+      }
+
+      .headline {
+        margin: 13px 0 0;
+        color: #d9f8fa;
+        font-size: 19px;
+        font-weight: 600;
+      }
+
+      .header-summary {
+        max-width: 650px;
+        margin: 18px 0 0;
+        color: rgba(255, 255, 255, 0.86);
+        font-size: 14px;
+        line-height: 1.55;
+      }
+
+      .profile-panel {
+        z-index: 1;
+        align-self: center;
+        justify-self: end;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .profile-photo {
+        display: block;
+        width: 142px;
+        height: 142px;
+        object-fit: cover;
+        object-position: center 42%;
+        border: 4px solid rgba(255, 255, 255, 0.92);
+        border-radius: 50%;
+        box-shadow: 0 12px 30px rgba(3, 18, 40, 0.3), 0 0 0 5px rgba(128, 226, 232, 0.2);
+      }
+
+      .qa-seal {
+        width: 178px;
+        padding: 10px 13px;
+        border: 1px solid rgba(255, 255, 255, 0.22);
+        border-radius: 13px;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(4px);
+        text-align: center;
+      }
+
+      .qa-seal img { display: block; width: 116px; margin: 0 auto; filter: brightness(0) invert(1); }
+
+      .qa-seal p {
+        margin: 12px 0 0;
+        color: rgba(255, 255, 255, 0.78);
+        font-size: 10px;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+      }
+
+      .metrics {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        border-bottom: 1px solid var(--line);
+        background: #f8fafc;
+      }
+
+      .metric {
+        padding: 15px 20px;
+        text-align: center;
+        border-right: 1px solid var(--line);
+      }
+
+      .metric:last-child { border-right: 0; }
+      .metric strong { display: block; color: var(--navy); font-size: 18px; }
+      .metric span { color: var(--muted); font-size: 11px; font-weight: 600; letter-spacing: 0.05em; text-transform: uppercase; }
+
+      .resume-body {
+        display: grid;
+        grid-template-columns: 30% minmax(0, 1fr);
+      }
+
+      .sidebar {
+        padding: 32px 27px 38px 37px;
+        background: linear-gradient(180deg, #f7f9fc, #f0f5f8);
+        border-right: 1px solid var(--line);
+      }
+
+      .main-content { padding: 32px 42px 42px; }
+
+      .section + .section { margin-top: 29px; }
+
+      .section-title {
+        display: flex;
+        align-items: center;
+        gap: 11px;
+        margin: 0 0 16px;
+        color: var(--navy);
+        font-size: 15px;
+        font-weight: 800;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+      }
+
+      .section-title::before {
+        content: "";
+        width: 7px;
+        height: 7px;
+        border: 3px solid var(--cyan);
+        border-radius: 50%;
+        box-shadow: 0 0 0 3px rgba(22, 183, 198, 0.12);
+      }
+
+      .contact-list,
+      .plain-list,
+      .experience-list {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .contact-list li + li { margin-top: 9px; }
+      .contact-list span { display: block; color: var(--muted); font-size: 10px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase; }
+      .contact-list a, .contact-list p { margin: 1px 0 0; overflow-wrap: anywhere; font-size: 12.5px; text-decoration: none; }
+
+      .skill-cluster + .skill-cluster { margin-top: 18px; }
+      .skill-cluster h3 { margin: 0 0 8px; color: #263650; font-size: 12px; }
+
+      .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+      .chip {
+        padding: 5px 8px;
+        border: 1px solid rgba(80, 107, 212, 0.18);
+        border-radius: 7px;
+        color: #33476b;
+        background: rgba(255, 255, 255, 0.84);
+        font-size: 10.5px;
+        font-weight: 600;
+      }
+
+      .education-item + .education-item { margin-top: 14px; }
+      .education-item strong { display: block; font-size: 12.5px; }
+      .education-item span { display: block; margin-top: 2px; color: var(--muted); font-size: 11.5px; }
+
+      .plain-list li { position: relative; padding-left: 13px; color: #344054; font-size: 12px; }
+      .plain-list li + li { margin-top: 6px; }
+      .plain-list li::before { content: ""; position: absolute; top: 50%; left: 0; width: 5px; height: 5px; border-radius: 50%; background: var(--cyan); transform: translateY(-50%); }
+
+      .experience-list { position: relative; --timeline-x: 7px; }
+      .experience-list::before { content: ""; position: absolute; top: 9px; bottom: 10px; left: var(--timeline-x); width: 1px; transform: translateX(-50%); background: linear-gradient(var(--blue), rgba(22, 183, 198, 0.3)); }
+
+      .experience-item {
+        position: relative;
+        padding-left: 29px;
+        break-inside: avoid;
+      }
+
+      .experience-item + .experience-item { margin-top: 22px; }
+      .experience-item::before { content: ""; position: absolute; top: 5px; left: var(--timeline-x); width: 14px; height: 14px; border: 3px solid #fff; border-radius: 50%; background: var(--blue); box-shadow: 0 0 0 2px rgba(80, 107, 212, 0.22); transform: translateX(-50%); }
+      .experience-item.current::before { background: var(--gold); box-shadow: 0 0 0 2px rgba(217, 145, 32, 0.25); }
+
+      .role-row { display: flex; align-items: flex-start; justify-content: space-between; gap: 18px; }
+      .role-row h3 { margin: 0; color: #182238; font-size: 15px; line-height: 1.25; }
+      .date { flex: 0 0 auto; color: var(--blue); font-size: 11px; font-weight: 800; letter-spacing: 0.03em; }
+      .company { margin: 3px 0 9px; color: var(--muted); font-size: 12px; font-weight: 600; }
+      .company strong { color: var(--navy); }
+
+      .experience-item ul { margin: 0; padding-left: 17px; color: #303b50; }
+      .experience-item li + li { margin-top: 4px; }
+      .experience-item li::marker { color: var(--cyan); }
+
+      .role-tag {
+        display: inline-block;
+        margin-top: 9px;
+        padding: 4px 8px;
+        border-radius: 999px;
+        color: #3152b0;
+        background: rgba(80, 107, 212, 0.09);
+        font-size: 10px;
+        font-weight: 700;
+      }
+
+      @media (max-width: 720px) {
+        body { font-size: 13px; }
+        .preview-actions { justify-content: center; }
+        .resume { width: 100%; margin-bottom: 0; border-width: 6px 0; box-shadow: none; }
+        .resume-header { grid-template-columns: 1fr; gap: 22px; padding: 32px 24px; }
+        .profile-panel { justify-self: start; flex-direction: row; }
+        .profile-photo { width: 112px; height: 112px; }
+        .qa-seal { width: auto; }
+        .qa-seal p { margin: 0; }
+        .metrics { grid-template-columns: 1fr; }
+        .metric { border-right: 0; border-bottom: 1px solid var(--line); }
+        .resume-body { grid-template-columns: 1fr; }
+        .sidebar { padding: 28px 24px; border-right: 0; border-bottom: 1px solid var(--line); }
+        .main-content { padding: 30px 24px 38px; }
+        .role-row { display: block; }
+        .date { display: block; margin-top: 4px; }
+      }
+
+      @media print {
+        @page { size: A4; margin: 0; }
+        body { background: #fff; font-size: 9.7px; line-height: 1.39; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+        .preview-actions { display: none !important; }
+        .resume { display: flex; flex-direction: column; width: 210mm; height: 297mm; min-height: 297mm; margin: 0; border-top-width: 6px; border-bottom-width: 6px; box-shadow: none; }
+        .resume-header { grid-template-columns: minmax(0, 1fr) 41mm; gap: 7.5mm; padding: 7mm 9.5mm 5.3mm; }
+        .eyebrow { margin-bottom: 1.5mm; font-size: 7.4px; }
+        h1 { font-size: 29px; }
+        .headline { margin-top: 2.3mm; font-size: 13px; }
+        .header-summary { margin-top: 3mm; font-size: 9.2px; line-height: 1.35; }
+        .profile-panel { gap: 1.7mm; }
+        .profile-photo { width: 28mm; height: 28mm; border-width: 0.9mm; }
+        .qa-seal { width: 34mm; padding: 1.8mm; }
+        .qa-seal img { width: 25mm; }
+        .qa-seal p { margin-top: 0.8mm; font-size: 5.8px; }
+        .metric { padding: 2.3mm 4mm; }
+        .metric strong { font-size: 12.3px; }
+        .metric span { font-size: 6.7px; }
+        .resume-body { flex: 1; grid-template-columns: 30% minmax(0, 1fr); min-height: 0; }
+        .sidebar { padding: 6mm 5mm 6mm 7.5mm; }
+        .main-content { display: flex; padding: 6mm 8.5mm 6mm; }
+        .main-content > .section { display: flex; flex: 1; flex-direction: column; width: 100%; min-height: 0; }
+        .experience-list { display: flex; flex: 1; flex-direction: column; justify-content: space-between; }
+        .section + .section { margin-top: 4.5mm; }
+        .section-title { margin-bottom: 2.6mm; font-size: 9.5px; }
+        .contact-list li + li { margin-top: 1.8mm; }
+        .skill-cluster + .skill-cluster { margin-top: 2.7mm; }
+        .skill-cluster h3 { margin-bottom: 1.3mm; font-size: 8.1px; }
+        .chips { gap: 1.1mm; }
+        .chip { padding: 0.8mm 1.2mm; font-size: 6.8px; }
+        .education-item + .education-item { margin-top: 2.7mm; }
+        .contact-list a, .contact-list p { font-size: 7.7px; }
+        .contact-list span { font-size: 6.1px; }
+        .education-item strong { font-size: 8.1px; }
+        .education-item span, .plain-list li { font-size: 7.2px; }
+        .plain-list li + li { margin-top: 1.1mm; }
+        .experience-item { padding-left: 6.8mm; }
+        .experience-item + .experience-item { margin-top: 3.2mm; }
+        .experience-item::before { top: 1mm; width: 3.4mm; height: 3.4mm; border-width: 0.75mm; }
+        .role-row h3 { font-size: 9.8px; }
+        .date { font-size: 7.1px; }
+        .company { margin: 0.6mm 0 1.35mm; font-size: 7.6px; }
+        .experience-item ul { padding-left: 3.7mm; }
+        .experience-item li + li { margin-top: 0.7mm; }
+        .role-tag { margin-top: 1.25mm; padding: 0.6mm 1.2mm; font-size: 6.2px; }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="preview-actions" aria-label="CV preview actions">
+      <a href="/">Back to portfolio</a>
+      <button class="primary" type="button" onclick="window.print()">Print / Save as PDF</button>
+    </nav>
+
+    <main class="resume">
+      <header class="resume-header">
+        <div>
+          <p class="eyebrow">Quality assurance · Web · Mobile · Desktop</p>
+          <h1>Emanoil Oriana Elena</h1>
+          <p class="headline">QA Automation &amp; Manual Engineer</p>
+          <p class="header-summary">
+            I am a QA Automation &amp; Manual Engineer with 7+ years of experience, in love with uncovering the unseen
+            and turning imperfections into perfection. With a strong eye for detail and a passion for quality, I bring
+            digital experiences to life through testing, crafting confidence in every release.
+          </p>
+        </div>
+        <div class="profile-panel">
+          <img class="profile-photo" src="/images/oriana-headshot.png" alt="Oriana Emanoil Elena" />
+          <div class="qa-seal" aria-label="QA portfolio identity">
+            <img src="/images/logo-qa.svg" alt="QriAna.dev" />
+            <p>Quality in every release</p>
+          </div>
+        </div>
+      </header>
+
+      <section class="metrics" aria-label="Career highlights">
+        <div class="metric"><strong>7+ years</strong><span>QA experience</span></div>
+        <div class="metric"><strong>4 domains</strong><span>Health · Pay · IT · Games</span></div>
+      </section>
+
+      <div class="resume-body">
+        <aside class="sidebar">
+          <section class="section">
+            <h2 class="section-title">Contact</h2>
+            <ul class="contact-list">
+              <li><span>Location</span><p>Bucharest, Romania</p></li>
+              <li><span>Phone</span><a href="tel:+40732713030">+40 732 713 030</a></li>
+              <li><span>Email</span><a href="mailto:oriana.emanoil@gmail.com">oriana.emanoil@gmail.com</a></li>
+              <li><span>Portfolio</span><a href="https://www.oriana.dev" target="_blank" rel="noopener noreferrer">www.oriana.dev</a></li>
+              <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/oriana-elena-emanoil-338487111/" target="_blank" rel="noopener noreferrer">Oriana Emanoil Elena</a></li>
+              <li><span>GitHub</span><a href="https://github.com/Jinxulete" target="_blank" rel="noopener noreferrer">https://github.com/OrianaEmanoil</a></li>
+            </ul>
+          </section>
+
+          <section class="section">
+            <h2 class="section-title">QA toolkit</h2>
+            <div class="skill-cluster">
+              <h3>Testing &amp; automation</h3>
+              <div class="chips">
+                <span class="chip">Cypress</span><span class="chip">Selenium</span><span class="chip">Postman</span>
+                <span class="chip">API Testing</span><span class="chip">Regression</span><span class="chip">Smoke Testing</span>
+                <span class="chip">Functional Testing</span><span class="chip">Test Design</span><span class="chip">Bug Reporting</span>
+              </div>
+            </div>
+            <div class="skill-cluster">
+              <h3>Engineering &amp; platforms</h3>
+              <div class="chips">
+                <span class="chip">JavaScript</span><span class="chip">Git</span><span class="chip">Jira</span>
+                <span class="chip">MySQL</span><span class="chip">ConfigCat</span><span class="chip">OpenSearch</span>
+                <span class="chip">HubSpot</span><span class="chip">Twilio</span><span class="chip">Nagios</span>
+              </div>
+            </div>
+            <div class="skill-cluster">
+              <h3>Web foundations</h3>
+              <div class="chips">
+                <span class="chip">HTML5</span><span class="chip">CSS / SCSS</span><span class="chip">React</span>
+                <span class="chip">Bootstrap</span><span class="chip">Laravel</span>
+              </div>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="education-item">
+              <strong>Faculty of Philosophy</strong>
+              <span>University of Bucharest · 2011 - 2015</span>
+            </div>
+            <div class="education-item">
+              <strong>Fashion Design</strong>
+              <span>"Nicolae Tonitza" Fine Arts High School · 2007 - 2011</span>
+            </div>
+          </section>
+
+          <section class="section">
+            <h2 class="section-title">Languages</h2>
+            <ul class="plain-list">
+              <li>Romanian - Native</li>
+              <li>English - Professional working proficiency</li>
+            </ul>
+          </section>
+        </aside>
+
+        <section class="main-content">
+          <section class="section">
+            <h2 class="section-title">Professional experience</h2>
+            <ol class="experience-list">
+              <li class="experience-item current">
+                <div class="role-row">
+                  <h3>QA Analyst</h3>
+                  <span class="date">Oct 2024 - Present</span>
+                </div>
+                <p class="company"><strong>Pionix Marketing Solutions</strong> · Remote, Romania</p>
+                <ul>
+                  <li>Execute manual and automated testing for responsive healthcare products spanning patient intake, member portals and operational workflows.</li>
+                  <li>Build and maintain Cypress coverage in JavaScript, with emphasis on stable end-to-end and regression scenarios.</li>
+                  <li>Validate APIs and integrations with Postman, document defects clearly and collaborate with developers through resolution and retesting.</li>
+                  <li>Assess functionality, usability, cross-browser behaviour and high-impact user journeys on desktop and mobile.</li>
+                </ul>
+                <span class="role-tag">Cypress · Postman · JavaScript · MySQL · Git · HubSpot · Konektive · OpenSearch · Twilio</span>
+              </li>
+
+              <li class="experience-item">
+                <div class="role-row">
+                  <h3>QA Tester · Jr. Front-End Developer · Critical Support</h3>
+                  <span class="date">Mar 2022 - Oct 2023</span>
+                </div>
+                <p class="company"><strong>StarTech Team</strong> · Remote, Bucharest</p>
+                <ul>
+                  <li>Performed manual and automated testing for websites and iOS applications, creating test scenarios, technical documentation and actionable bug reports.</li>
+                  <li>Tested the Enjoee event application and contributed to SigurantaPeNet, an online learning platform with courses, quizzes and phishing simulations.</li>
+                  <li>Used Selenium and Postman for QA, while front-end work strengthened root-cause analysis across HTML, SCSS, Laravel and JavaScript implementations.</li>
+                  <li>Supported Windows/Linux systems, backups and monitoring, bringing infrastructure awareness into application testing.</li>
+                </ul>
+                <span class="role-tag">Selenium · Postman · HTML5 · CSS / SCSS · JavaScript · React · Laravel · npm · Git · iOS</span>
+              </li>
+
+              <li class="experience-item">
+                <div class="role-row">
+                  <h3>Critical Support Administrator</h3>
+                  <span class="date">Mar 2019 - Feb 2020</span>
+                </div>
+                <p class="company"><strong>StarTech Team</strong> · On-site, Bucharest</p>
+                <ul>
+                  <li>Monitored and administered Windows and Linux environments and configured backup processes, including Windows Backup and Veeam.</li>
+                  <li>Investigated incidents methodically, documented resolutions and supported reliable day-to-day systems operation.</li>
+                </ul>
+                <span class="role-tag">Windows · Linux · Veeam · Nagios · Monitoring</span>
+              </li>
+
+              <li class="experience-item">
+                <div class="role-row">
+                  <h3>Software QA Tester</h3>
+                  <span class="date">May 2017 - Dec 2019</span>
+                </div>
+                <p class="company"><strong>PayScout</strong> · On-site, Bucharest</p>
+                <ul>
+                  <li>Tested payment and credit-card functionality, converting repeatable manual checks into Selenium automation.</li>
+                  <li>Used Selenium and Postman to validate critical transaction flows and report reproducible defects.</li>
+                </ul>
+                <span class="role-tag">Payments · Selenium · Postman</span>
+              </li>
+
+              <li class="experience-item">
+                <div class="role-row">
+                  <h3>QA Tester</h3>
+                  <span class="date">Feb 2016 - Mar 2017</span>
+                </div>
+                <p class="company"><strong>Electronic Arts (EA)</strong> · On-site, Bucharest</p>
+                <ul>
+                  <li>Tested game functionality on PS3, PS4, Xbox One and PC, identifying bugs, glitches and inconsistencies.</li>
+                  <li>Collaborated with development teams through clear reproduction steps, verification and regression testing.</li>
+                </ul>
+                <span class="role-tag">Selenium · Postman · PS3 · PS4 · Xbox One · PC</span>
+              </li>
+            </ol>
+          </section>
+
+        </section>
+      </div>
+    </main>
+  </body>
+</html>
