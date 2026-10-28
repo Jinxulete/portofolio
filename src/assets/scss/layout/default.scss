@@ -23,6 +23,22 @@ body {
 
 }
 
+.container-fluid,
+.container-fluid * {
+	-webkit-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+
+.container-fluid .selectable-content,
+.container-fluid .selectable-content * {
+	-webkit-user-select: text;
+	   -moz-user-select: text;
+	    -ms-user-select: text;
+	        user-select: text;
+}
+
 button,
 input,
 select,
@@ -2534,6 +2550,15 @@ textarea {
 		-webkit-text-stroke: none;
 	}
 
+	.about-heart {
+		color: #d51635;
+		-webkit-text-fill-color: #d51635;
+		text-shadow: 0 1px 0 #8d0d22, 0 3px 7px rgba(141, 13, 34, 0.3);
+		-webkit-transform: translateY(2px);
+		    -ms-transform: translateY(2px);
+		        transform: translateY(2px);
+	}
+
 
 }
 
@@ -3016,6 +3041,13 @@ textarea {
 }
 
 @media (max-width: 576px) {
+	.ptitle-p {
+		font-size: 36px;
+		line-height: 1.15;
+		margin-top: 34px;
+		margin-bottom: 20px;
+	}
+
 	#about-container p {
 		font-size: 25px;
 	}
@@ -3150,7 +3182,8 @@ textarea {
 	}
 
 	.ctim-title {
-		padding: 28px 0;
+		padding: 18px 0;
+		margin-bottom: 18px;
 
 		&::before {
 			left: -20px;

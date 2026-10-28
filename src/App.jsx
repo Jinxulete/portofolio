@@ -71,7 +71,11 @@ const qaChecks = ['Navigation', 'Content', 'Project cards', 'Responsive UI', 'Co
       const marker = Math.min(window.innerHeight * 0.35, 280)
       const scrollPosition = window.scrollY || window.pageYOffset || 0
       const scrollableDistance = Math.max(1, document.documentElement.scrollHeight - window.innerHeight)
-      const showGoTop = scrollPosition >= scrollableDistance * 0.45
+      const heroSection = document.getElementById('first-container')
+      const headerHeight = document.getElementById('header-container')?.offsetHeight || 76
+      const showGoTop = heroSection
+        ? heroSection.getBoundingClientRect().bottom <= headerHeight + 16
+        : scrollPosition >= window.innerHeight
       const scrollProgress = Math.min(1, scrollPosition / scrollableDistance)
       let activeType = 'home'
 

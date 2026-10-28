@@ -58,7 +58,7 @@ import triangle from '/images/triangle-v.png';
                   <p className='hero-subtitle'>I build and test reliable digital experiences.</p>
                   <div className='hero-actions'>
                     <a href='#projects-container' className='hero-action hero-action-primary'>View projects</a>
-                    <a href='/EmanoilOrianaCV.pdf' target='_blank' rel='noreferrer' className='hero-action hero-action-secondary'>Download resume</a>
+                    <a href='/EmanoilOrianaCV.pdf?v=20261028' target='_blank' rel='noreferrer' className='hero-action hero-action-secondary'>Download resume</a>
                   </div>
                 </div>
               </FadeIn>

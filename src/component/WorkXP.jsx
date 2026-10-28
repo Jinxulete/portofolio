@@ -186,9 +186,9 @@ function ProjectCard({ project, index }) {
 
   return (
     <div id='workxp-container' className='container container-cont workxp-container'>
-        <p className='ptitle-p reveal-on-scroll'>Work Experience</p>
+        <p className='ptitle-p reveal-on-scroll selectable-content'>Work Experience</p>
 
-        <ul className='workexp-ul reveal-on-scroll'>
+        <ul className='workexp-ul reveal-on-scroll selectable-content'>
           <li className='current-role'>
             <div className='work-exp-ul-div'>
               <span>2024 - present</span>
