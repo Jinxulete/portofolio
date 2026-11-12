@@ -17,7 +17,7 @@ const projectRows = [
   [
     {
       name: 'Member Portal FEM',
-      link: 'https://dev.member.femexcel.com',
+      link: 'https://member.femexcel.com',
       image: '/images/member-portal-fem.jpeg',
       description:
         'A patient-facing healthcare portal designed for women to complete medical intake forms, provide health information, and access prescription-related services. Desktop & Mobile.',
@@ -61,7 +61,7 @@ const projectRows = [
   [
     {
       name: 'MEMO',
-      link: 'https://memologin.com',
+      link: '#',
       image: '/images/memo.jpeg',
       description:
         'A healthcare platform used by doctors to manage patient information, conduct consultations, document medical visits, and prescribe medications. Desktop & Mobile.',
